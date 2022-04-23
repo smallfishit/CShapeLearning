@@ -15,7 +15,7 @@ namespace BaseProject.Function
         /// <param name="score">分數</param>
         public string ShowScoreResult(int score)
         {
-            string result = "";
+            string result = string.Empty;
             if(score < 0 || score > 100)
             {
                 result = "請輸入0~100的整數";
