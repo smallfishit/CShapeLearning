@@ -56,8 +56,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CShapeLearning\ParkingFee.csproj">
-      <Project>{A28FDC4C-8DB2-4A14-9C87-4233DA94252A}</Project>
+    <ProjectReference Include="..\ParkingFee\ParkingFee.csproj">
+      <Project>{a28fdc4c-8db2-4a14-9c87-4233da94252a}</Project>
       <Name>ParkingFee</Name>
     </ProjectReference>
   </ItemGroup>
