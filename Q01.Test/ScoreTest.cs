@@ -19,7 +19,7 @@ namespace Q01.Test
         /// <param name="result">結果</param>
         private void CheckScoreResult(int score, string result)
         {
-            //練習題物件
+            //建立物件
             ScoreAnalysis analysis = new ScoreAnalysis();
             //顯示結果
             string sResult = analysis.ShowScoreResult(score);

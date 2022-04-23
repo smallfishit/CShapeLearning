@@ -17,7 +17,7 @@ namespace Q02.Test
         /// <param name="strokeData">行程測試物件</param>
         private void CheckScoreResult(StrokeTestData strokeData)
         {
-            //練習題物件
+            //建立物件
             StrokeAnalysis analysis = new StrokeAnalysis();
             //顯示結果
             var result = analysis.GetTodayStroke(strokeData.nowDate, strokeData.temperature, strokeData.weather);
