@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CShapeLearning
 {
-    public partial class Form2 : Form
+    public partial class Practice1Form : Form
     {
-        public Form2()
+        public Practice1Form()
         {
             InitializeComponent();
         }

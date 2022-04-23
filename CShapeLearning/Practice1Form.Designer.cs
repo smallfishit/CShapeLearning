@@ -1,6 +1,6 @@
 ﻿namespace CShapeLearning
 {
-    partial class Form2
+    partial class Practice1Form
     {
         /// <summary>
         /// Required designer variable.
@@ -79,22 +79,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "練習題1";
             // 
-            // ScoreResultBox
+            // ScoreResultRichBox
             // 
             this.ScoreResultRichBox.Font = new System.Drawing.Font("新細明體", 16F);
             this.ScoreResultRichBox.Location = new System.Drawing.Point(19, 141);
-            this.ScoreResultRichBox.Name = "ScoreResultBox";
+            this.ScoreResultRichBox.Name = "ScoreResultRichBox";
             this.ScoreResultRichBox.Size = new System.Drawing.Size(406, 33);
             this.ScoreResultRichBox.TabIndex = 3;
             // 
-            // Form2
+            // Practice1Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1281, 557);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "Practice1Form";
+            this.Text = "練習題題庫1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
