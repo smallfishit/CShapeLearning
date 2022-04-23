@@ -1,6 +1,6 @@
-﻿namespace CShapeLearning
+﻿namespace CShapePractice1
 {
-    partial class Practice1Form
+    partial class Q01
     {
         /// <summary>
         /// Required designer variable.
@@ -31,16 +31,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ScoreBox = new System.Windows.Forms.TextBox();
             this.ScoreButton = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.ScoreResultRichBox = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("新細明體", 16F);
-            this.label1.Location = new System.Drawing.Point(15, 40);
+            this.label1.Location = new System.Drawing.Point(106, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(186, 22);
             this.label1.TabIndex = 0;
@@ -49,7 +47,7 @@
             // ScoreBox
             // 
             this.ScoreBox.Font = new System.Drawing.Font("新細明體", 16F);
-            this.ScoreBox.Location = new System.Drawing.Point(205, 35);
+            this.ScoreBox.Location = new System.Drawing.Point(296, 46);
             this.ScoreBox.Name = "ScoreBox";
             this.ScoreBox.Size = new System.Drawing.Size(100, 33);
             this.ScoreBox.TabIndex = 1;
@@ -57,7 +55,7 @@
             // ScoreButton
             // 
             this.ScoreButton.Font = new System.Drawing.Font("新細明體", 16F);
-            this.ScoreButton.Location = new System.Drawing.Point(19, 87);
+            this.ScoreButton.Location = new System.Drawing.Point(110, 98);
             this.ScoreButton.Name = "ScoreButton";
             this.ScoreButton.Size = new System.Drawing.Size(130, 37);
             this.ScoreButton.TabIndex = 2;
@@ -65,39 +63,27 @@
             this.ScoreButton.UseVisualStyleBackColor = true;
             this.ScoreButton.Click += new System.EventHandler(this.ScoreButton_Click);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.ScoreResultRichBox);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.ScoreButton);
-            this.groupBox1.Controls.Add(this.ScoreBox);
-            this.groupBox1.Font = new System.Drawing.Font("新細明體", 16F);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(453, 193);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "練習題1";
-            // 
             // ScoreResultRichBox
             // 
             this.ScoreResultRichBox.Font = new System.Drawing.Font("新細明體", 16F);
-            this.ScoreResultRichBox.Location = new System.Drawing.Point(19, 141);
+            this.ScoreResultRichBox.Location = new System.Drawing.Point(110, 152);
             this.ScoreResultRichBox.Name = "ScoreResultRichBox";
             this.ScoreResultRichBox.Size = new System.Drawing.Size(406, 33);
             this.ScoreResultRichBox.TabIndex = 3;
             // 
-            // Practice1Form
+            // Q01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1281, 557);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "Practice1Form";
-            this.Text = "練習題題庫1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.ClientSize = new System.Drawing.Size(626, 246);
+            this.Controls.Add(this.ScoreResultRichBox);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ScoreButton);
+            this.Controls.Add(this.ScoreBox);
+            this.Name = "Q01";
+            this.Text = "練習題1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -106,7 +92,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox ScoreBox;
         private System.Windows.Forms.Button ScoreButton;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox ScoreResultRichBox;
     }
 }
+

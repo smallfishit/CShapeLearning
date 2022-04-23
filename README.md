@@ -3,13 +3,15 @@
 
 ### C#進階練習題
 [題目來源](https://www.evernote.com/shard/s530/sh/019c49aa-e591-562a-0798-a9a6e8d96d33/f68a2bc14e4689802efdddbc289b04de)  
+專案：CShapeLearning  
 表單：Form1  
 測試：TestProject/FeeTest.cs  
   
 ### C#基本練習題題庫1  
-表單：Practice1Form  
+專案：CShapePractice1  
 測試：TestProject/Practice1Test.cs  
-  
+
+表單：Q01  
 (1):從鍵盤輸入考試分數  
 當score>=90;輸出考試優秀；  
 score>=80,輸出考試良好；  

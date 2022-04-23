@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CShapeLearning
+namespace CShapePractice1
 {
-    public partial class Practice1Form : Form
+    public partial class Q01 : Form
     {
-        public Practice1Form()
+        public Q01()
         {
             InitializeComponent();
         }
