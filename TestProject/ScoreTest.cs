@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Q01.Test
 {
+    /// <summary>分數測試</summary>
     [TestFixture]
     public class ScoreTest
     {
@@ -35,7 +36,15 @@ namespace Q01.Test
         [Test]
         public void ShowScoreResult_InputScore_ReturnOutOfRange(int score, string result)
         {
-            CheckScoreResult(score, result);
+            try
+            {
+                CheckScoreResult(score, result);
+            }
+            catch(Exception ex)
+            {
+                //驗證結果是否正確
+                Assert.AreEqual(result, ex.Message);
+            }
         }
 
         /// <summary>

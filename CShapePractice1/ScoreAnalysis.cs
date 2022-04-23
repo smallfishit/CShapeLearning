@@ -18,9 +18,10 @@ namespace Q01
             string result = string.Empty;
             if(score < 0 || score > 100)
             {
-                result = "請輸入0~100的整數";
+                throw new Exception("請輸入0~100的整數");
             }
-            else if(score < 60)
+
+            if(score < 60)
             {
                 result = "下次繼續努力";
             }

@@ -21,19 +21,37 @@ namespace Q01
         {
             if (string.IsNullOrWhiteSpace(ScoreBox.Text))
             {
-                ScoreResultRichBox.Text = "請輸入內容";
+                ShowMessage("請輸入內容");
                 return;
             }
+
             int number = 0;
             if (Int32.TryParse(ScoreBox.Text, out number))
             {
-                ScoreAnalysis analysis = new ScoreAnalysis();
-                ScoreResultRichBox.Text = analysis.ShowScoreResult(number);
+                try
+                {
+                    ScoreAnalysis analysis = new ScoreAnalysis();
+                    ScoreResultRichBox.Text = analysis.ShowScoreResult(number);
+                }
+                catch (Exception ex)
+                {
+                    ShowMessage(ex.Message);
+                }
             }
             else
             {
-                ScoreResultRichBox.Text = "請輸入數字";
+                ShowMessage("請輸入內容");
             }
+        }
+
+        /// <summary>
+        /// 顯示訊息
+        /// </summary>
+        /// <param name="text">訊息內容</param>
+        private void ShowMessage(string text)
+        {
+            ScoreResultRichBox.Text = string.Empty;
+            MessageBox.Show(text);
         }
     }
 }
