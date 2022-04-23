@@ -6,8 +6,8 @@ using System.Text;
 
 namespace BaseProject.Function
 {
-    /// <summary>練習題1解題類別</summary>
-    public class Q01Solution
+    /// <summary>分數分析</summary>
+    public class ScoreAnalysis
     {
         /// <summary>
         /// 顯示分數結果

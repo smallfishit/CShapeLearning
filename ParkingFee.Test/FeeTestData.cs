@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestProject.Models
+namespace ParkingFee.Test
 {
     /// <summary>停車費測試資料</summary>
     public class FeeTestData

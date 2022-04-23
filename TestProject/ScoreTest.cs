@@ -6,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestProject
+namespace Q01.Test
 {
     [TestFixture]
-    public class Q01Test
+    public class ScoreTest
     {
         /// <summary>
         /// 
@@ -30,9 +30,9 @@ namespace TestProject
         public void ShowScoreResult_InputScore_ReturnResult(int score, string result)
         {
             //練習題物件
-            Q01Solution practice = new Q01Solution();
+            ScoreAnalysis analysis = new ScoreAnalysis();
             //顯示結果
-            string sResult = practice.ShowScoreResult(score);
+            string sResult = analysis.ShowScoreResult(score);
             //驗證結果是否正確
             Assert.AreEqual(result, sResult);
         }

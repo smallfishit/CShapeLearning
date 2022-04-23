@@ -48,19 +48,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FeeTest.cs" />
-    <Compile Include="Models\FeeTestData.cs" />
-    <Compile Include="Q01Test.cs" />
+    <Compile Include="ScoreTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BaseProject\BaseProject.csproj">
-      <Project>{0A882177-5BC5-4228-83C7-C8AA08841DD4}</Project>
-      <Name>BaseProject</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\CShapePractice1\Q01.csproj">
+      <Project>{f39ea51b-6c69-46d7-b487-c05aa18d8700}</Project>
+      <Name>Q01</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

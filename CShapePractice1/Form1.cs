@@ -28,7 +28,7 @@ namespace Q01
             int number = 0;
             if (Int32.TryParse(ScoreBox.Text, out number))
             {
-                Q01Solution solution = new Q01Solution();
+                ScoreAnalysis solution = new ScoreAnalysis();
                 ScoreResultRichBox.Text = solution.ShowScoreResult(number);
             }
             else
