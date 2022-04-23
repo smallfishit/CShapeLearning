@@ -16,7 +16,7 @@ namespace CShapeLearning
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Practice1Form());
+            Application.Run(new Form1());
         }
     }
 }

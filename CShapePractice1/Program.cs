@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CShapePractice1
+namespace Q01
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace CShapePractice1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Q01());
+            Application.Run(new Form1());
         }
     }
 }

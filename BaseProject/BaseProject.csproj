@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Function\ParkingFeeCalculator.cs" />
-    <Compile Include="Function\Practice1Solution.cs" />
+    <Compile Include="Function\Q01Solution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A28FDC4C-8DB2-4A14-9C87-4233DA94252A}</ProjectGuid>
+    <ProjectGuid>{F39EA51B-6C69-46D7-B487-C05AA18D8700}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>CShapeLearning</RootNamespace>
-    <AssemblyName>CShapeLearning</AssemblyName>
+    <RootNamespace>CShapePractice1</RootNamespace>
+    <AssemblyName>CShapePractice1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,17 +52,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Practice1Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Practice1Form.Designer.cs">
-      <DependentUpon>Practice1Form.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Practice1Form.resx">
-      <DependentUpon>Practice1Form.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -72,6 +63,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

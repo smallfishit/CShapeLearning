@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1525
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CShapeLearning", "CShapeLearning\CShapeLearning.csproj", "{A28FDC4C-8DB2-4A14-9C87-4233DA94252A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingFee", "CShapeLearning\ParkingFee.csproj", "{A28FDC4C-8DB2-4A14-9C87-4233DA94252A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseProject", "BaseProject\BaseProject.csproj", "{0A882177-5BC5-4228-83C7-C8AA08841DD4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{5CBE4A0E-8812-44F0-8FF5-D07EF961BBAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CShapePractice1", "CShapePractice1\CShapePractice1.csproj", "{F39EA51B-6C69-46D7-B487-C05AA18D8700}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q01", "CShapePractice1\Q01.csproj", "{F39EA51B-6C69-46D7-B487-C05AA18D8700}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

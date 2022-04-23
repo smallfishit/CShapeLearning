@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace TestProject
 {
     [TestFixture]
-    public class Practice1Test
+    public class Q01Test
     {
         /// <summary>
         /// 
@@ -30,9 +30,9 @@ namespace TestProject
         public void ShowScoreResult_InputScore_ReturnResult(int score, string result)
         {
             //練習題物件
-            Practice1Solution practice = new Practice1Solution(score);
+            Q01Solution practice = new Q01Solution();
             //顯示結果
-            string sResult = practice.ShowScoreResult();
+            string sResult = practice.ShowScoreResult(score);
             //驗證結果是否正確
             Assert.AreEqual(result, sResult);
         }

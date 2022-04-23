@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CShapePractice1
+namespace Q01
 {
-    public partial class Q01 : Form
+    public partial class Form1 : Form
     {
-        public Q01()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -28,8 +28,8 @@ namespace CShapePractice1
             int number = 0;
             if (Int32.TryParse(ScoreBox.Text, out number))
             {
-                Practice1Solution solution = new Practice1Solution(number);
-                ScoreResultRichBox.Text = solution.ShowScoreResult();
+                Q01Solution solution = new Q01Solution();
+                ScoreResultRichBox.Text = solution.ShowScoreResult(number);
             }
             else
             {

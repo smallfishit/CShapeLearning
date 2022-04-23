@@ -1,6 +1,6 @@
-﻿namespace CShapePractice1
+﻿namespace Q01
 {
-    partial class Q01
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
