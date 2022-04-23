@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace BaseProject.Function
+namespace Q01
 {
     /// <summary>分數分析</summary>
     public class ScoreAnalysis

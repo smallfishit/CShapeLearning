@@ -1,5 +1,4 @@
-﻿using BaseProject.Function;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,8 +27,8 @@ namespace Q01
             int number = 0;
             if (Int32.TryParse(ScoreBox.Text, out number))
             {
-                ScoreAnalysis solution = new ScoreAnalysis();
-                ScoreResultRichBox.Text = solution.ShowScoreResult(number);
+                ScoreAnalysis analysis = new ScoreAnalysis();
+                ScoreResultRichBox.Text = analysis.ShowScoreResult(number);
             }
             else
             {
