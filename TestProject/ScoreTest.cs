@@ -11,6 +11,21 @@ namespace Q01.Test
     public class ScoreTest
     {
         /// <summary>
+        /// 分數共用測試方法
+        /// </summary>
+        /// <param name="score">分數</param>
+        /// <param name="result">結果</param>
+        private void CheckScoreResult(int score, string result)
+        {
+            //練習題物件
+            ScoreAnalysis analysis = new ScoreAnalysis();
+            //顯示結果
+            string sResult = analysis.ShowScoreResult(score);
+            //驗證結果是否正確
+            Assert.AreEqual(result, sResult);
+        }
+
+        /// <summary>
         /// 超出範圍的測試
         /// </summary>
         /// <param name="score">分數</param>
@@ -20,12 +35,7 @@ namespace Q01.Test
         [Test]
         public void ShowScoreResult_InputScore_ReturnOutOfRange(int score, string result)
         {
-            //練習題物件
-            ScoreAnalysis analysis = new ScoreAnalysis();
-            //顯示結果
-            string sResult = analysis.ShowScoreResult(score);
-            //驗證結果是否正確
-            Assert.AreEqual(result, sResult);
+            CheckScoreResult(score, result);
         }
 
         /// <summary>
@@ -39,12 +49,7 @@ namespace Q01.Test
         [Test]
         public void ShowScoreResult_InputScore_ReturnFail(int score, string result)
         {
-            //練習題物件
-            ScoreAnalysis analysis = new ScoreAnalysis();
-            //顯示結果
-            string sResult = analysis.ShowScoreResult(score);
-            //驗證結果是否正確
-            Assert.AreEqual(result, sResult);
+            CheckScoreResult(score, result);
         }
 
         /// <summary>
@@ -58,12 +63,7 @@ namespace Q01.Test
         [Test]
         public void ShowScoreResult_InputScore_ReturnOK(int score, string result)
         {
-            //練習題物件
-            ScoreAnalysis analysis = new ScoreAnalysis();
-            //顯示結果
-            string sResult = analysis.ShowScoreResult(score);
-            //驗證結果是否正確
-            Assert.AreEqual(result, sResult);
+            CheckScoreResult(score, result);
         }
 
         /// <summary>
@@ -77,12 +77,7 @@ namespace Q01.Test
         [Test]
         public void ShowScoreResult_InputScore_ReturnGood(int score, string result)
         {
-            //練習題物件
-            ScoreAnalysis analysis = new ScoreAnalysis();
-            //顯示結果
-            string sResult = analysis.ShowScoreResult(score);
-            //驗證結果是否正確
-            Assert.AreEqual(result, sResult);
+            CheckScoreResult(score, result);
         }
 
         /// <summary>
@@ -96,12 +91,7 @@ namespace Q01.Test
         [Test]
         public void ShowScoreResult_InputScore_ReturnExcellent(int score, string result)
         {
-            //練習題物件
-            ScoreAnalysis analysis = new ScoreAnalysis();
-            //顯示結果
-            string sResult = analysis.ShowScoreResult(score);
-            //驗證結果是否正確
-            Assert.AreEqual(result, sResult);
+            CheckScoreResult(score, result);
         }
     }
 }
