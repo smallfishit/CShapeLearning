@@ -10,7 +10,7 @@ namespace Q11
     {
         static void Main(string[] args)
         {
-            int minimum = 10001;
+            int minimum = 10000;
             int maxmum = 99999;
 
             List<int> narcissisticList = new List<int>();
