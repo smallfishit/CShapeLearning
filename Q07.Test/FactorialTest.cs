@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Q08.Test
+namespace Q07.Test
 {
     /// <summary>階乘測試</summary>
     [TestFixture]
@@ -21,7 +21,7 @@ namespace Q08.Test
             //建立物件
             FactorialAnalysis factorial = new FactorialAnalysis();
             //顯示結果
-            int m_factorialSum = factorial.GetFactorial(number);
+            int m_factorialSum = factorial.GetFactorialSum(number);
             //驗證結果是否正確
             Assert.AreEqual(factorialSum, m_factorialSum);
         }
@@ -31,15 +31,13 @@ namespace Q08.Test
         /// </summary>
         /// <param name="number">輸入的數字</param>
         /// <param name="factorialSum">階乘的和</param>
-        [TestCase(0, 1)]
         [TestCase(1, 1)]
-        [TestCase(2, 2)]
-        [TestCase(5, 120)]
-        [TestCase(6, 720)]
-        [TestCase(7, 5040)]
-        [TestCase(8, 40320)]
+        [TestCase(2, 3)]
+        [TestCase(5, 153)]
+        [TestCase(6, 873)]
+        [TestCase(7, 5913)]
         [Test]
-        public void GetFactorial_InputNumber_ReturnFactorial(int number, int factorialSum)
+        public void GetFactorialSum_InputNumber_ReturnFactorialSum(int number, int factorialSum)
         {
             CheckFactorialResult(number, factorialSum);
         }
@@ -49,9 +47,11 @@ namespace Q08.Test
         /// </summary>
         /// <param name="number">輸入的數字</param>
         /// <param name="result">顯示結果</param>
-        [TestCase(-1, "階乘數字必須為0以上的整數")]
+        [TestCase(-1, "只接受1~10之間的正整數")]
+        [TestCase(0, "只接受1~10之間的正整數")]
+        [TestCase(11, "只接受1~10之間的正整數")]
         [Test]
-        public void GetFactorial_InputNumber_ReturnOutOfRange(int number, string result)
+        public void GetFactorialSum_InputNumber_ReturnOutOfRange(int number, string result)
         {
             string m_result = "";
             try

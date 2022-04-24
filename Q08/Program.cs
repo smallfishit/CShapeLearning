@@ -10,12 +10,30 @@ namespace Q08
     {
         static void Main(string[] args)
         {
-            int number = 10;
+            int minimum = 101;
+            int maxmum = 999;
+
+            List<int> narcissisticList = new List<int>();
             try
             {
-                FactorialAnalysis analysis = new FactorialAnalysis();
-                int result = analysis.GetFactorial(number);
-                Console.WriteLine($"{number}! = {result}");
+                NarcissisticAnalysis analysis = new NarcissisticAnalysis();
+                for (int i=minimum;i<=maxmum;i++)
+                {
+                    if(analysis.IsNarcissistic(i))
+                    {
+                        narcissisticList.Add(i);
+                    }
+                }
+                Console.Write($"3位數的水仙花數為：");
+                for (int i = 0; i < narcissisticList.Count; i++)
+                {
+                    if(i > 0)
+                    {
+                        Console.Write($", ");
+                    }
+                    Console.Write($"{narcissisticList[i]}");
+                }
+                Console.WriteLine();
             }
             catch (Exception ex)
             {

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{41E2C737-F696-4CFC-AEC5-BC70A4FDC56E}</ProjectGuid>
+    <ProjectGuid>{3FF6B5FE-CDD5-4406-A3CC-E77533D2A646}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Q09</RootNamespace>
-    <AssemblyName>Q09</AssemblyName>
+    <RootNamespace>Q07</RootNamespace>
+    <AssemblyName>Q07</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PrimeAnalysis.cs" />
+    <Compile Include="FactorialAnalysis.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

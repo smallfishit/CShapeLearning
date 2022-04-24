@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{85112BF4-89D9-4E73-92AA-9ADB8D7A40B2}</ProjectGuid>
+    <ProjectGuid>{E9BF18F6-8EC1-4DB9-BCB2-52BFC7CBF9BB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Q08</RootNamespace>
     <AssemblyName>Q08</AssemblyName>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FactorialAnalysis.cs" />
+    <Compile Include="NarcissisticAnalysis.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

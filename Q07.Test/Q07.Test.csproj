@@ -6,11 +6,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D20CAF26-B84F-47C0-BDF6-9944EED85914}</ProjectGuid>
+    <ProjectGuid>{D608A34C-5C70-40BB-8489-A360CE6C58F0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Q06.Test</RootNamespace>
-    <AssemblyName>Q06.Test</AssemblyName>
+    <RootNamespace>Q07.Test</RootNamespace>
+    <AssemblyName>Q07.Test</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -48,16 +48,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FactorialTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Q06\Q06.csproj">
-      <Project>{85112bf4-89d9-4e73-92aa-9adb8d7a40b2}</Project>
-      <Name>Q06</Name>
+    <ProjectReference Include="..\Q07\Q07.csproj">
+      <Project>{3ff6b5fe-cdd5-4406-a3cc-e77533d2a646}</Project>
+      <Name>Q07</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

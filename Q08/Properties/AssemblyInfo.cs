@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 組件的一般資訊是由下列的屬性集控制。
 // 變更這些屬性的值即可修改組件的相關
 // 資訊。
-[assembly: AssemblyTitle("Q08")]
+[assembly: AssemblyTitle("Q09")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Q08")]
+[assembly: AssemblyProduct("Q09")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 下列 GUID 為專案公開 (Expose) 至 COM 時所要使用的 typelib ID
-[assembly: Guid("85112bf4-89d9-4e73-92aa-9adb8d7a40b2")]
+[assembly: Guid("e9bf18f6-8ec1-4db9-bcb2-52bfc7cbf9bb")]
 
 // 組件的版本資訊由下列四個值所組成: 
 //

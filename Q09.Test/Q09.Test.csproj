@@ -6,7 +6,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A79477AD-4E99-492F-9E20-B6007AD5EE87}</ProjectGuid>
+    <ProjectGuid>{19B87085-680D-47B5-8695-89A9D147137C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Q09.Test</RootNamespace>
@@ -48,20 +48,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NarcissisticTest.cs" />
+    <Compile Include="PrimeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Q09\Q09.csproj">
-      <Project>{e9bf18f6-8ec1-4db9-bcb2-52bfc7cbf9bb}</Project>
-      <Name>Q09</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
+    <ProjectReference Include="..\Q09\Q09.csproj">
+      <Project>{41e2c737-f696-4cfc-aec5-bc70a4fdc56e}</Project>
+      <Name>Q09</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

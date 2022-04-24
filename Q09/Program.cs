@@ -11,23 +11,23 @@ namespace Q09
         static void Main(string[] args)
         {
             int minimum = 101;
-            int maxmum = 999;
+            int maxmum = 200;
 
             List<int> narcissisticList = new List<int>();
             try
             {
-                NarcissisticAnalysis analysis = new NarcissisticAnalysis();
-                for (int i=minimum;i<=maxmum;i++)
+                PrimeAnalysis analysis = new PrimeAnalysis();
+                for (int i = minimum; i <= maxmum; i++)
                 {
-                    if(analysis.IsNarcissistic(i))
+                    if (analysis.IsPrime(i))
                     {
                         narcissisticList.Add(i);
                     }
                 }
-                Console.Write($"3位數的水仙花數為：");
+                Console.Write($"{minimum}~{maxmum}之間的質數為：");
                 for (int i = 0; i < narcissisticList.Count; i++)
                 {
-                    if(i > 0)
+                    if (i > 0)
                     {
                         Console.Write($", ");
                     }

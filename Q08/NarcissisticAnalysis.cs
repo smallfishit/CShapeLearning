@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Q09
+namespace Q08
 { 
     public class NarcissisticAnalysis
     {
