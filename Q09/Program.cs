@@ -40,7 +40,6 @@ namespace Q09
                 Console.WriteLine(ex.Message);
             }
 
-
             Console.WriteLine();
             Console.WriteLine("請輸入任意鍵結束!");
             Console.ReadKey();
