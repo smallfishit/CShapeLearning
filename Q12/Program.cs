@@ -23,7 +23,7 @@ namespace Q12
                     {
                         space = " ";
                     }
-                    Console.Write($"{i}*{j}={space}{i * j}");
+                    Console.Write($"{i}x{j}={space}{i * j}");
                 }
                 Console.WriteLine();
             }
