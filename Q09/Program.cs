@@ -13,7 +13,7 @@ namespace Q09
             int minimum = 101;
             int maxmum = 200;
 
-            List<int> narcissisticList = new List<int>();
+            List<int> primeList = new List<int>();
             try
             {
                 PrimeAnalysis analysis = new PrimeAnalysis();
@@ -21,17 +21,17 @@ namespace Q09
                 {
                     if (analysis.IsPrime(i))
                     {
-                        narcissisticList.Add(i);
+                        primeList.Add(i);
                     }
                 }
                 Console.Write($"{minimum}~{maxmum}之間的質數為：");
-                for (int i = 0; i < narcissisticList.Count; i++)
+                for (int i = 0; i < primeList.Count; i++)
                 {
                     if (i > 0)
                     {
                         Console.Write($", ");
                     }
-                    Console.Write($"{narcissisticList[i]}");
+                    Console.Write($"{primeList[i]}");
                 }
                 Console.WriteLine();
             }

@@ -10,35 +10,22 @@ namespace Q11
     {
         static void Main(string[] args)
         {
-            int minimum = 10000;
-            int maxmum = 99999;
-
-            List<int> narcissisticList = new List<int>();
-            try
+            //直接列出所有迴文數
+            int index = 0;
+            for (int i = 1; i < 10; i++)
             {
-                PalindromeAnalysis analysis = new PalindromeAnalysis();
-                for (int i = minimum; i <= maxmum; i++)
+                for (int j = 0; j < 10; j++)
                 {
-                    if (analysis.IsPalindrome(i))
+                    for (int k = 0; k < 10; k++)
                     {
-                        narcissisticList.Add(i);
+                        if(index > 0)
+                            Console.Write(", ");
+                        Console.Write($"{i}{j}{k}{j}{i}");
+                        index++;
                     }
                 }
-                Console.Write($"{minimum}~{maxmum}之間的迴文為：");
-                for (int i = 0; i < narcissisticList.Count; i++)
-                {
-                    if (i > 0)
-                    {
-                        Console.Write($", ");
-                    }
-                    Console.Write($"{narcissisticList[i]}");
-                }
-                Console.WriteLine();
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            Console.Write($" 共{index}個迴文數");
 
             Console.WriteLine();
             Console.WriteLine("請輸入任意鍵結束!");
