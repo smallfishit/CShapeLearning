@@ -69,7 +69,7 @@ namespace Q09.Test
         [Test]
         public void GetPrime_InputNumber_ReturnOutOfRange(int number, string result)
         {
-            string m_result = "";
+            string m_result = string.Empty;
             try
             {
                 CheckPrimeResult(number, true);
