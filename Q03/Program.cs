@@ -10,15 +10,29 @@ namespace Q03
     {
         static void Main(string[] args)
         {
-            List<float> list = new List<float>();
+            List<UserData> list = new List<UserData>();
             for(int i=0;i<3;i++)
             {
-                Console.Write($"請輸入第{i + 1}個數字：");
+                Console.Write($"請輸入第{i + 1}個人的年齡(整數)：");
                 string text = Console.ReadLine();
-                float number = 0;
-                if(float.TryParse(text, out number))
+                int number = 0;
+                if(Int32.TryParse(text, out number))
                 {
-                    list.Add(number);
+                    UserData data = new UserData();
+                    switch(i)
+                    {
+                        case 0:
+                            data.Name = "小明";
+                            break;
+                        case 1:
+                            data.Name = "小華";
+                            break;
+                        case 2:
+                            data.Name = "小英";
+                            break;
+                    }
+                    data.Age = number;
+                    list.Add(data);
                 }
                 else
                 {
@@ -27,8 +41,8 @@ namespace Q03
                 }
             }
             MiddleNumber middleNumber = new MiddleNumber();
-            float middle = middleNumber.GetMiddleNumber(list[0], list[1], list[2]);
-            Console.WriteLine($"中間的數為：{middle}");
+            UserData middle = middleNumber.GetMiddleNumber(list[0], list[1], list[2]);
+            Console.WriteLine($"中間的數為：{middle.Age}");
 
             Console.WriteLine();
             Console.WriteLine("請輸入任意鍵結束!");

@@ -7,30 +7,29 @@ using System.Threading.Tasks;
 
 namespace Q03.Test
 {
-    /// <summary>中間數測試</summary>
+
     [TestFixture]
     public class MiddleTest
     {
-        /// <summary>
-        /// 中間數的測試
-        /// </summary>
-        /// <param name="number1">第1個數</param>
-        /// <param name="number2">第2個數</param>
-        /// <param name="number3">第3個數</param>
-        /// <param name="middle">中間數</param>
-        [TestCase(-1, 1, 2, 1)]
-        [TestCase(2.55f, 3.47f, 1.23f, 2.55f)]
-        [TestCase(7, 2, 3, 3)]
-        [TestCase(6.5f, 7.8f, 3f, 6.5f)]
-        [Test]
-        public void GetMiddleNumber_InputNumbers_ReturnMiddleNumber(float number1, float number2, float number3, float middle)
+        /// <summary>使用者測試資料</summary>
+        private static UserTestData[] _userTestArray = new[]
         {
-            //建立物件
-            MiddleNumber number = new MiddleNumber();
-            //顯示結果
-            float m_middle = number.GetMiddleNumber(number1, number2, number3);
+            new UserTestData(){ userList = new List<UserData>(){ new UserData("小明", 3), new UserData("小華", 2), new UserData("小英", 5) }, age = 3},
+            new UserTestData(){ userList = new List<UserData>(){ new UserData("小明", 3), new UserData("小華", 1), new UserData("小英", 2) }, age = 2},
+            new UserTestData(){ userList = new List<UserData>(){ new UserData("小明", 7), new UserData("小華", 2), new UserData("小英", 3) }, age = 3},
+            new UserTestData(){ userList = new List<UserData>(){ new UserData("小明", 6), new UserData("小華", 8), new UserData("小英", 3) }, age = 6},
+        };
+
+        [Test]
+        public void GetMiddleNumber_InputUserList_ReturnMiddle([ValueSource("_userTestArray")]UserTestData testData)
+        {
+            //建立中間數計算物件
+            MiddleNumber middle = new MiddleNumber();
+            //計算中間數
+            UserData result = middle.GetMiddleNumber<UserData>(testData.userList[0], testData.userList[1], testData.userList[2]);
             //驗證結果是否正確
-            Assert.AreEqual(middle, m_middle);
+            Assert.AreEqual(testData.age, result.Age);
         }
+
     }
 }

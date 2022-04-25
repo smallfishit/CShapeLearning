@@ -8,7 +8,15 @@ namespace Q03
 {
     public class MiddleNumber
     {
-        public T GetMiddleNumber<T>(T number1, T number2, T number3) where T : IComparable
+        /// <summary>
+        /// 取得中間的數字(因為只有三個數字，排除前後就是中間數)
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="number1">輸入數字1</param>
+        /// <param name="number2">輸入數字2</param>
+        /// <param name="number3">輸入數字3</param>
+        /// <returns></returns>
+        public T GetMiddleNumber1<T>(T number1, T number2, T number3) where T : IComparable
         {
             T[] array = new T[] { number1, number2, number3 };
             T min = number1;
@@ -33,6 +41,65 @@ namespace Q03
                 }
             }
             return mid;
+        }
+
+        /// <summary>
+        /// 取得中間的數字(使用排序的方法)
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="number1">輸入數字1</param>
+        /// <param name="number2">輸入數字2</param>
+        /// <param name="number3">輸入數字3</param>
+        /// <returns></returns>
+        public T GetMiddleNumber<T>(T number1, T number2, T number3) where T : IComparable
+        {
+            T[] array = new T[] { number1, number2, number3 };
+            T[] sortArray = SelectSortArray(array);
+            return sortArray[1];
+        }
+
+        /// <summary>
+        /// 選擇排序法
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="arr">輸入陣列</param>
+        /// <returns></returns>
+        static T[] SelectSortArray<T>(T[] arr) where T : IComparable
+        {
+            int length = arr.Length;
+            int i, j;
+
+            for (i = 0; i < length - 1; i++)
+            {
+                int min = i;
+                //走訪未排序的元素
+                for (j = i + 1; j < length; j++)
+                {
+                    //找到目前最小值
+                    if (arr[j].CompareTo(arr[min]) < 0)
+                    {
+                        //紀錄最小值
+                        min = j;
+                    }
+                }
+                if (min != i)
+                {
+                    //交換兩個變數
+                    Swap(ref arr[i], ref arr[min]);
+                }
+            }
+            return arr;
+        }
+
+        /// <summary>
+        /// 交換變數
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="f1">變數1</param>
+        /// <param name="f2">變數2</param>
+        static void Swap<T>(ref T f1, ref T f2)
+        {
+            (f1, f2) = (f2, f1);
         }
     }
 }
