@@ -8,6 +8,20 @@ namespace Q08
 { 
     public class NarcissisticAnalysis
     {
+        private Dictionary<int, int> NarcissisticList { get; set; }
+
+        /// <summary>
+        /// 建構子
+        /// </summary>
+        public NarcissisticAnalysis()
+        {
+            NarcissisticList = new Dictionary<int, int>();
+            for(int i=0;i<10;i++)
+            {
+                NarcissisticList.Add(i, (int)Math.Pow(i, 3));
+            }
+        }
+
         /// <summary>確認輸入數字是否為水仙花數</summary>
         /// <param name="number">輸入數字</param>
         /// <returns></returns>
@@ -22,7 +36,7 @@ namespace Q08
             int tempNum = number;
             while(tempNum > 0)
             {
-                squareSum += (int)Math.Pow(tempNum % 10, 3);
+                squareSum += NarcissisticList[tempNum % 10];
                 tempNum /= 10;
             }
             if(squareSum == number)
