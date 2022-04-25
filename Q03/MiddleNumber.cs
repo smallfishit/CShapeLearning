@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Q04
+namespace Q03
 {
-    public class MininumNumber
+    public class MiddleNumber
     {
-        public T GetMininumNumber<T>(T number1, T number2, T number3) where T : IComparable
+        public T GetMiddleNumber<T>(T number1, T number2, T number3) where T : IComparable
         {
             T[] array = new T[] { number1, number2, number3 };
             T[] sortArray = InsertSortArray(array);
-            return sortArray[0];
+            return sortArray[1];
         }
 
         /// <summary>
@@ -52,5 +52,6 @@ namespace Q04
             f1 = f2;
             f2 = temp;
         }
+
     }
 }
