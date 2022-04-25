@@ -32,5 +32,33 @@ namespace Q11
             }
             return true;
         }
+
+        /// <summary>
+        /// 取得所有5位數迴文
+        /// </summary>
+        public List<int> GetAllFivePalindrome()
+        {
+            List<int> palindromeList = new List<int>();
+            //直接列出所有迴文數
+            for (int i = 1; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    for (int k = 0; k < 10; k++)
+                    {
+                        int number = i * 10000 + j * 1000 + k * 100 + j * 10 + i;
+                        if(IsPalindrome(number))
+                        {
+                            palindromeList.Add(number);
+                        }
+                        else
+                        {
+                            throw new Exception("迴文的程式邏輯有誤");
+                        }
+                    }
+                }
+            }
+            return palindromeList;
+        }
     }
 }

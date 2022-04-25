@@ -55,7 +55,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApp1\Q03.csproj">
+    <ProjectReference Include="..\Q03\Q03.csproj">
       <Project>{51a4b2bb-4c7e-4cfb-843d-722449b2047b}</Project>
       <Name>Q03</Name>
     </ProjectReference>

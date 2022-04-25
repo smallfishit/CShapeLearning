@@ -10,22 +10,25 @@ namespace Q11
     {
         static void Main(string[] args)
         {
-            //直接列出所有迴文數
-            int index = 0;
-            for (int i = 1; i < 10; i++)
+            PalindromeAnalysis analysis = new PalindromeAnalysis();
+
+            try
             {
-                for (int j = 0; j < 10; j++)
+                List<int> palindromeList = analysis.GetAllFivePalindrome();
+                for (int i = 0; i < palindromeList.Count; i++)
                 {
-                    for (int k = 0; k < 10; k++)
+                    if (i > 0)
                     {
-                        if(index > 0)
-                            Console.Write(", ");
-                        Console.Write($"{i}{j}{k}{j}{i}");
-                        index++;
+                        Console.Write($", ");
                     }
-                }
+                    Console.Write(palindromeList[i]);
             }
-            Console.Write($" 共{index}個迴文數");
+                Console.Write($" 共{palindromeList.Count}個迴文數");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
             Console.WriteLine();
             Console.WriteLine("請輸入任意鍵結束!");
